@@ -1,10 +1,6 @@
-import React, {
-  createContext,
-  Fragment,
-  useReducer,
-} from "react";
-import { Form } from "./Form";
-import { List } from "./List";
+import React, { createContext, Fragment, useReducer } from "react";
+import { Form } from "./components/Form";
+import { List } from "./components/List";
 
 export const HOST_API = "http://localhost:8080/api";
 const initialState = {
