@@ -24,26 +24,15 @@ body {
     margin-top: 90px;
     color: #A683E3;
   }
-  #Agregar {
-    margin-left: 5px;
-  }
-  #Eliminar {
-    margin-left: 5px;
-  }
-  /* .InArriba {
-    margin-left: 100px;
-    margin-top: 10px;
-  } */
+ 
   .titulo {
     text-align: center;
     margin-top: 20px;
     color: #A683E3;
   }
-  .Input {
-    border: 2px solid;
-  }
+ 
 
   .input-group{
-      margin: 100px 0 100px;
-      padding: 100px;
+      margin: 30px 0 20px;
+      padding: 10px;
   }

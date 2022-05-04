@@ -85,12 +85,12 @@ const Form = () => {
         }}
       ></input>
       {item.id && (
-        <button class="btn btn-primary" onClick={onEdit}>
+        <button class="btn btn-dark" onClick={onEdit}>
           Actualizar
         </button>
       )}
       {!item.id && (
-        <button id="Agregar" class="btn btn-primary" onClick={onAdd}>
+        <button class="btn btn-dark" onClick={onAdd}>
           Agregar
         </button>
       )}
@@ -142,12 +142,12 @@ const List = () => {
 
   return (
     <div className="tabla">
-      <table className="table table-hover">
+      <table className="table table-striped">
         <thead className="thead-light">
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">¿Esta completado?</th>
+            <th scope="col">Tarea</th>
+            <th scope="col">Completado</th>
             <th scope="col">Eliminar</th>
             <th scope="col">Editar</th>
           </tr>
@@ -155,7 +155,7 @@ const List = () => {
         <tbody>
           {state.list.map((todo) => (
             <tr>
-              <td scope="row">{todo.id}</td>
+              <th scope="row">{todo.id}</th>
               <td className={todo.completed ? "tachado" : {}}>{todo.name}</td>
               <td>
                 <input
@@ -166,7 +166,6 @@ const List = () => {
               </td>
               <td>
                 <button
-                  id="Eliminar"
                   type="button"
                   class="btn btn-danger"
                   onClick={() => onDelete(todo.id)}
