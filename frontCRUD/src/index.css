@@ -12,3 +12,11 @@ code {
     monospace;
 }
 
+.tachar{
+    text-decoration-line: line-through;
+    text-decoration-color: #A683E3;
+  };
+
+input:checked{
+    justify-content: center;
+}
