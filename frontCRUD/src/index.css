@@ -1,22 +1,49 @@
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.tachar{
+  .tachado {
     text-decoration-line: line-through;
     text-decoration-color: #A683E3;
-  };
+  }
+  .tabla {
+    text-align: center;
+    width: 85%;
+    margin-left: 100px;
+    height: auto;
+    margin-top: 90px;
+    color: #A683E3;
+  }
+  #Agregar {
+    margin-left: 5px;
+  }
+  #Eliminar {
+    margin-left: 5px;
+  }
+  /* .InArriba {
+    margin-left: 100px;
+    margin-top: 10px;
+  } */
+  .titulo {
+    text-align: center;
+    margin-top: 20px;
+    color: #A683E3;
+  }
+  .Input {
+    border: 2px solid;
+  }
 
-input:checked{
-    justify-content: center;
-}
+  .input-group{
+      margin: 100px 0 100px;
+      padding: 100px;
+  }
