@@ -8,7 +8,8 @@ export const Form = () => {
     state: { item },
   } = useContext(Store);
   const [state, setState] = useState({ item });
-
+  
+  //Método Agregar items conecta con la ruta del back
   const onAdd = (event) => {
     // event.preventDefault();
     const request = {
@@ -31,7 +32,8 @@ export const Form = () => {
         formRef.current.reset();
       });
   };
-
+  
+  //Método editar conecta con la ruta del back
   const onEdit = (event) => {
     // event.preventDefault();
     const request = {
