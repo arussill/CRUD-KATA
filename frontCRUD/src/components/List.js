@@ -3,7 +3,8 @@ import { Store, HOST_API } from "../App";
 
 export const List = () => {
   const { dispatch, state } = useContext(Store);
-
+  
+  //Método de GET trae todos los elementos de la bd
   useEffect(() => {
     fetch(HOST_API + "/todos")
       .then((response) => response.json())
@@ -11,7 +12,8 @@ export const List = () => {
         dispatch({ type: "update-list", list });
       });
   }, [state.list.length, dispatch]);
-
+  
+  //Método DELETE 
   const onDelete = (id) => {
     fetch(HOST_API + "/" + id + "/todo", {
       method: "DELETE",
@@ -19,11 +21,13 @@ export const List = () => {
       dispatch({ type: "delete-item", id });
     });
   };
-
+  
+  //Obtiene los itemes que se van a editar para actualizar 
   const onEdit = (todo) => {
     dispatch({ type: "edit-item", item: todo });
   };
-
+  
+  //actualiza los items 
   const onChange = (event, todo) => {
     const request = {
       name: todo.name,
